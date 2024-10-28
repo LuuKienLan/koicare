@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #f9f3ec;
+  height: 110px;
+}
+
+.header_logo img {
+  width: 148px;
+  height: auto;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.nav_list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav_list li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Chilanka", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.nav_list li:hover {
+  color: #dead6f;
+}
+
+.nav_icons_header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon_header {
+  font-size: 34px;
+  color: black;
+  margin-right: 50px;
+}
+
+.icon_header:hover {
+  color: #dead6f;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user_name {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.user_name:hover {
+  color: #dead6f;
+}
+
+.logout_button {
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.logout_button:hover {
+  color: red;
+}
+
+.img_profile img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.profile_dropdown {
+  position: relative;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown_menu a,
+.services_menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-family: "Chilanka", system-ui;
+  font-size: 16px !important;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  font-weight: bold !important;
+}
+
+.dropdown_menu a:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.services_menu {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services_menu a:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}

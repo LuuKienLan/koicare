@@ -1,0 +1,234 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../../Components/Assets/background3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-wrapper .wrapper {
+  position: relative;
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border-radius: 10px;
+  padding: 50px 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: height 0.2s ease;
+  overflow: hidden;
+}
+
+.login-wrapper .form-box {
+  flex: 1;
+  width: 80%;
+}
+
+.login-wrapper form h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.login-wrapper form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.login-wrapper .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+}
+
+.login-wrapper .input-box input::placeholder {
+  color: #fff;
+}
+
+.login-wrapper .input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: -15px 0 15px;
+}
+
+.login-wrapper .remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+
+.login-wrapper .remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-wrapper .remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.login-wrapper .login_button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: #0171d3;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.login-wrapper .register_button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: #616568;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.login-wrapper a {
+  text-decoration: none;
+}
+
+.login-wrapper .wrapper.active {
+  height: 500px;
+}
+
+.login-wrapper .wrapper .forgot {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #0b3256;
+  margin-top: 8px;
+}
+
+.login-wrapper .wrapper .register-link {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.login-wrapper .wrapper .form-box.register {
+  transition: translate 0.18s ease;
+  translate: 0;
+}
+
+.login-wrapper .wrapper.active .form-box.login {
+  transition: none;
+  translate: -400px;
+}
+
+.login-wrapper .wrapper .form-box.register {
+  position: absolute;
+  translate: 400px;
+}
+
+.login-wrapper .wrapper.active .form-box.register {
+  transition: translate 0.18s ease;
+  translate: 0;
+}
+
+.login-wrapper .register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-wrapper .register-link p a:hover {
+  text-decoration: underline;
+}
+
+.login-wrapper .line {
+  display: inline-block;
+  border-bottom: solid 1px #333;
+  width: 45%;
+}
+
+.login-wrapper .center {
+  color: #333;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.login-wrapper .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.login-wrapper .google {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  background-image: url(../../Components/Assets/google.svg);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 3px;
+  background-position-x: 5%;
+}
+
+.login_button:disabled {
+  cursor: not-allowed;
+}
+
+.register_button:disabled {
+  background-color: #616568;
+  cursor: not-allowed;
+}
+
+.register_button:disabled:hover {
+  background-color: #242525;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register_button:enabled {
+  background-color: #0171d3;
+  cursor: pointer;
+}
+
+.register_button:enabled:hover {
+  background-color: #005bb5;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-wrapper .login_button:hover {
+  background-color: #005bb5;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
